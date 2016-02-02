@@ -7,6 +7,6 @@ script:
   - docker-compose run app /bin/bash -c "cd /src && npm test"
 
 after_success:
-  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD tutum.co"
-  - docker tag haardashboard_app tutum.co/stuartalexwhitehead/haar-dashboard:latest
-  - docker push tutum.co/stuartalexwhitehead/haar-dashboard:latest
+  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker tag haardashboard_app stuartalexwhitehead/haar-dashboard:latest
+  - docker push stuartalexwhitehead/haar-dashboard:latest
