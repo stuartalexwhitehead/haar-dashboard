@@ -8,5 +8,5 @@ script:
 
 after_success:
   - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-  - docker tag haardashboard_app stuartalexwhitehead/haar-dashboard
-  - docker push stuartalexwhitehead/haar-dashboard
+  - docker tag haardashboard_app tutum.co/stuartalexwhitehead/haar-dashboard:latest
+  - docker push tutum.co/stuartalexwhitehead/haar-dashboard:latest
