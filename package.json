@@ -1,0 +1,21 @@
+{
+  "name": "haar-dashboard",
+  "version": "0.0.0",
+  "description": "Haar Dashboard is a front-end UI for Haar API",
+  "author": "Stuart Whitehead",
+  "scripts": {
+    "test": "mocha"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stuartalexwhitehead/haar-dashboard.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
