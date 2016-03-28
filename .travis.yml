@@ -4,7 +4,7 @@ services:
   - docker
 
 script:
-  - docker-compose run app /bin/bash -c "cd /src && npm test"
+  - docker-compose run --service-ports -e "API__URL=${API__URL}" -e "APP__URL=${APP__URL}" -e "NODE_ENV=${NODE_ENV}" app /bin/bash -c "cd /src && npm test"
 
 after_success:
   - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
