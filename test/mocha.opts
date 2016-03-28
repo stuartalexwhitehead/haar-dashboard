@@ -1,1 +1,4 @@
---reporter nyan
+--compilers js:babel-core/register
+--use_strict
+--harmony_default_parameters
+--harmony_destructuring
