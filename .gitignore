@@ -35,3 +35,4 @@ node_modules
 .env
 dist/js/bundle.js
 dist/css/style.css
+!lib/node_modules
