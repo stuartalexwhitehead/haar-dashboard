@@ -63,5 +63,5 @@
   },
   "pre-commit": [
     "eslint"
-  ],
+  ]
 }
