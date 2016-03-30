@@ -4,7 +4,7 @@
 PATH=$(npm bin):$PATH
 
 # Watch scss files
-stylus lib/index.styl -o dist/css/style.css -c -u autoprefixer-stylus -w &
+stylus lib/index.styl -o dist/css/style.css -u autoprefixer-stylus -w &
 
 # Watch JS files
 webpack --watch
