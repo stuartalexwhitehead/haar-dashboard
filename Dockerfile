@@ -13,6 +13,11 @@ RUN apt-get clean
 # Filesystem
 COPY . /src
 
+# Env vars for compilation
+ENV API__URL=https://api.haar.io/
+ENV APP__URL=https://www.haar.io/
+ENV NODE_ENV=production
+
 # Install dependancies
 RUN cd /src; npm install;
 RUN cd /src; npm run compile;
