@@ -15,7 +15,8 @@ COPY . /src
 
 # Install dependancies
 RUN cd /src; npm install;
+RUN cd /src; npm run compile;
 
 # Runtime
 EXPOSE 3001
-CMD ["node", "/src/index.js"]
+CMD cd /src; npm start;

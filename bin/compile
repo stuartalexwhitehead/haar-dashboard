@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Add local executables to PATH
+PATH=$(npm bin):$PATH
+
+# Watch scss files
+stylus lib/index.styl -o dist/css/style.css -c -u autoprefixer-stylus &
+
+# Watch JS files
+webpack -p
